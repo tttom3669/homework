@@ -4,22 +4,31 @@ import java.util.*
 
 fun main() {
     val scn = Scanner(System.`in`)
+    var totalTickets = 0;
 
-    print("Please enter number of tickets: ")
-    val totalTickets = scn.nextInt()
+    while (totalTickets != -1 ){
+        println("If you want to stop,please press -1")
+        print("Please enter number of tickets: ")
+        totalTickets = scn.nextInt()
 
-    print("How many Round-trip tickets: ")
-    val roundTrip = scn.nextInt()
+        if (totalTickets == -1) break
 
-    var ticket = Ticketk(totalTickets,roundTrip)
-    ticket.print()
+        print("How many Round-trip tickets: ")
+        var roundTrip = scn.nextInt()
+        var ticket = Ticketk(totalTickets,roundTrip)
+        ticket.print()
+    }
+    println("Thank you")
+
+
+
 }
 
 class Ticketk(var totalTickets : Int,var roundTrip : Int){
     fun print(){
         val total = ((totalTickets-roundTrip)*1000 + (roundTrip*2000)*0.9).toInt();
 
-        print("Total tickets: " + totalTickets + "\n" +
+        println("Total tickets: " + totalTickets + "\n" +
         "Round-trip: " + roundTrip + "\n" + "Total: " + total)
     }
 }
