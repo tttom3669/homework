@@ -1,4 +1,4 @@
-package com.box;
+package com.tom.box;
 
 public class Box5 extends Box{
     public Box5(float length, float width, float height) {

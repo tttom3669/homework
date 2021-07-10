@@ -1,4 +1,4 @@
-package com.train;
+package com.tom.train;
 
 import java.util.Scanner;
 

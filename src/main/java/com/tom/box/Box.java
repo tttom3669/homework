@@ -1,4 +1,4 @@
-package com.box;
+package com.tom.box;
 
 public class Box {
 

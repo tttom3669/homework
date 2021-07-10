@@ -1,4 +1,4 @@
-package com.train;
+package com.tom.train;
 
 public class Ticket {
     int totalTickets;
